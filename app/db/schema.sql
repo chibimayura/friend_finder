@@ -1,0 +1,19 @@
+DROP DATABASE IF EXISTS friendfinder_db;
+
+CREATE DATABASE friendfinder_db;
+
+USE friendfinder_db;
+
+CREATE TABLE questions (
+	id INT NOT NULL AUTO_INCREMENT,
+	question VARCHAR(255) NOT NULL,
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE users (
+	id INT NOT NULL AUTO_INCREMENT,
+	name VARCHAR(255) NOT NULL,
+	picture VARCHAR(255) NOT NULL,
+	answers JSON NOT NULL,
+	PRIMARY KEY(id)
+);

@@ -1,0 +1,39 @@
+html, body{
+	height: 100%;
+	width: 100%;
+}
+body {
+	background-color: #404040;
+}
+
+.container{
+	height: 100%;
+	margin: auto;
+	margin-bottom: 20px;
+	padding: 20px 50px;
+	padding-bottom: 50px;
+	background-color: #f2f2f2; 
+	border-right: 20px dotted #4d194d;
+	border-left: 20px dotted #4d194d;
+}
+
+.btn {
+	letter-spacing: 5px;
+	font-size: 25px;
+	font-weight: bold;
+	width: 25%;
+	height: 75px;
+	border-color: #4d194d;
+}
+
+.btn-primary {
+	background-color: #4d194d;
+}
+.btn-primary:hover {
+	background-color: #601f60;
+	border-color: #601f60;
+}
+
+form {
+	margin-bottom: 50px;
+}
