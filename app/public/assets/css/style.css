@@ -9,8 +9,7 @@ body {
 .container{
 	height: 100%;
 	margin: auto;
-	margin-bottom: 20px;
-	padding: 20px 50px;
+	padding: 10px 50px;
 	padding-bottom: 50px;
 	background-color: #f2f2f2; 
 	border-right: 20px dotted #4d194d;
@@ -36,4 +35,12 @@ body {
 
 form {
 	margin-bottom: 50px;
+}
+
+p {
+	margin: 0;
+	margin: 5px;
+	font-size: 16px;
+	font-weight: bold;
+
 }

@@ -26,12 +26,12 @@ if(url.includes('/survey')){
 
 		for(var i = 0; i < inputs.length; i++){
 			newP = $('<p>').text(inputs[i].charAt(0).toUpperCase() + inputs[i].substring(1));
-			newInput = $('<input>').attr({
-				'name' : inputs[i]
-			});
+			newInput = $('<input>').attr('name', inputs[i]).css('width', '100%');
 
 			formSelector.append(newP, newInput);
 		}
+
+		formSelector.append('<hr>');
 
 		for(var i = 0; i < data.length; i++){
 			newP = $('<p>').html((i+1) + '. ' + data[i].question);
@@ -49,5 +49,6 @@ if(url.includes('/survey')){
 		}
 
 		formSelector.append('<br><br>').append(newBtn);
+
 	});	
 }
